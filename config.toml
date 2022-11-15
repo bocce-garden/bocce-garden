@@ -1,8 +1,8 @@
 languageCode = 'en-us'
 DefaultContentLanguage = "en"
 
-author = "June Grato"
-baseURL = "https://www.bocce.garden/"
+author = "Juniper Grato"
+baseURL = "https://www.bocce.garden"
 copyright = "Copyright © 2022–2022"
 enableEmoji = true
 disqusShortname = ""
