@@ -3,11 +3,6 @@ layout: page
 title: About
 permalink: /about/
 date:   2022-10-24 19:02:00 -0700
-menu:
-  main:
-    name: "About"
-    weight: 3
-    url: "about"
 ---
 
 People have been throwing things around and calling themselves the winner for a few thousand years.

@@ -1,155 +1,138 @@
-baseurl = "https://www.bocce.garden/"
-metaDataFormat = "yaml"
-title = "Bocce Garden"
-theme = "blist"
-
+baseURL = "https://example.com"
+title = "Bocce.Garden"
+author = "wamo"
+languageCode = "en"
 DefaultContentLanguage = "en"
-DefaultContentLanguageInSubdir = true
-[languages]
-  [languages.en]
-    contentDir = "content/en" #English
-    weight = 1
-    languageName = "English"
-    [languages.en.params]
-      introTitle = "Hey! I'm Katheryn Fox"
-      introSubtitle = "26 y/o junior developer who enjoys social card games, blogging and painting"
-      introPhoto = "/picture.jpg"
-      logo = "/blist-logo.png"
-    [[languages.en.menu.main]]
-        name = "Blog"
-        url = "blog"
-        weight = 1
+enableInlineShortcodes = true
+theme = "Blonde"
+enableRobotsTXT = true
 
-    [[languages.en.menu.main]]
-        name = "About"
-        url = "page/about/"
-        weight = 2
+# Please enable this feature if the site is available in Japanese, Chinese or Korean.
+#hasCJKLanguage = true
 
-    [[languages.en.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
+# If you're using Google Analytics, you can enable this feature.
+#googleAnalytics = "G-1234567890"
 
-    [[languages.en.menu.main]]
-        name = "Top Post"
-        url = "/en/blog/emoji-support/"
-        weight = 4
-
-  [languages.de]
-    contentDir = "content/de" # Deutsch
-    weight = 2
-    languageName = "Deutsch"
-    title = "Blist (mehrsprachig)"
-    description = "Modernes Blog-Theme für Ihre Hugo-Site."
-    [languages.de.params]
-      introTitle = "Hallo, ich bin Katheryn Fox"
-      introSubtitle = "26-jährige Junior-Entwicklerin, die Spaß an sozialen Kartenspielen, Bloggen und Malen hat"
-      introPhoto = "/picture.jpg"
-      logo = "/blist-logo-de.png"
-    [[languages.de.menu.main]]
-        name = "Blog"
-        url = "blog"
-        weight = 1
-
-    [[languages.de.menu.main]]
-        name = "Über mich"
-        url = "page/about/"
-        weight = 2
-
-    [[languages.de.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
-        
-  [languages.fr]
-    contentDir = "content/fr" #French
-    weight = 1
-    languageName = "Français"
-    [languages.fr.params]
-      introTitle = "Salut! Je suis Katheryn Fox"
-      introSubtitle = "Développeuse junior de 26 ans qui adore les jeux de société, le blogging et la peinture"
-      introPhoto = "/picture.jpg"
-      logo = "/blist-logo.png"
-    [[languages.fr.menu.main]]
-        name = "Blog"
-        url = "blog"
-        weight = 1
-
-    [[languages.fr.menu.main]]
-        name = "À propos"
-        url = "page/about/"
-        weight = 2
-
-    [[languages.fr.menu.main]]
-        name = "Tags"
-        url = "tags"
-        weight = 3
-        
-  [languages.dy]
-    contentDir = "content/dy" #Example language
-    weight = 3
-    languageName = "Test Language"
+# Disqus Comment System
+#disqusShortname = ""
 
 [params]
-  # Enable the darkmode toggle in header
-  darkModeToggle = true
-  
-  # Enable search in header
-  enableSearch = true
+# Base color of the website.
+# https://tailwindcss.com/docs/background-color
+base_color = "bg-gray-800"
 
-  # Custom copyright - optional
-  copyright = "Copyright © 2021 - Katheryn Fox · All rights reserved"
-  favicon = "/favicon.svg"
+#Site description
+description = "Bocce Gardens of Southern California"
 
-  # Color for the intro details and social links block, not applicable for dark mode
-  # Supported values: Any color from TailwindCSS default colors
-  # Reference: https://tailwindcss.com/docs/customizing-colors
-  ascentColor = "bg-blue-100"
+# The number of articles to be displayed on a single page.
+paginator_pages = "5"
 
-  # The page bundle that is shown on the front page
-  frontBundle = "blog"
+# Enable this if you want the archive list to be in a drop-down format.
+archive_dropdown = "false"
 
-  # Used to hide the post metadata such as posted date, reading time and word count
-  # Can be used at site level or page level
-  hideMeta = false
+# Number of tags to be displayed.
+tagsLimit = 20
 
-  # To hide "Other languages" option if the post is available in multiple languages
-  # Can be used at site level or page level
-  hideOtherLanguages = false
+# Dark mode by default : dark
+# Light mode by default : light
+darkmode = "light"
 
-[params.homepage.social]
-  # Global params common for both languages
-  title = "Follow me"
-  description = "I work on everything coding and tweet developer memes"
-  twitter = "https://twitter.com/"
-  linkedin = "https://linkedin.com/in/"
-  xing = "https://www.xing.com/profile/"
-  github = "https://github.com/"
-  medium = "https://medium.com/"
-  reddit = "https://reddit.com/"
-  dribbble = "https://dribbble.com/"
-  stackoverflow = "https://stackoverflow.com/"
-  tiktok = "https://tiktok.com"
+  [params.ad]
+    # Google AdSense
+    # ex. ca-pub-0000000000000000
+    googleAdSense = ""
 
-[[menu.main]]
-  name = "About"
-  url = "/about"
-  weight = 1
-[[menu.main]]
-  name = "Gardens"
-  url = "/gardens"
-  weight = 2
+    # ex. 000000000
+    adslot = ""
 
-[build]
-  writeStats = true
+    # Placement of ads
+    postTop = false
+    postBottom = false
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+  [params.post]
+    # Show thumbnails
+    thumbnail = true
 
-# syntax highlight settings
-[markup]
-  [markup.highlight]
-    style = "dracula"
-  [markup.goldmark.renderer]
-    # Enable to include inline HTML
-    unsafe = true
+    # Disable the "NO IMAGE" image.
+    noimage = true
+
+    # See the Tailwind CSS documentation to set it up.
+    # Recommended settings are h-32 to h-48.
+    # https://tailwindcss.com/docs/height
+    thumbnail_height = "lg:h-44"
+
+    # https://tailwindcss.com/docs/width
+    thumbnail_width = "lg:w-auto"
+
+    # Number of characters in description
+    description = "130"
+
+  [params.widgets]
+    # Display widgets
+    display = true
+
+    # Order of widgets to display
+    widgets = ["search", "archive", "category", "tags", "recent"]
+
+# If you're using Yandex.Metrica, you can enable this feature.
+#[params.analytics.yandexmetrica]
+#    enabled = true
+#    tagNumber = ''
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "gardens"
+    name = "Gardens"
+    url = "/gardens/"
+    weight = 3
+
+  [[menu.main]]
+    identifier = "playthroughs"
+    name = "Playthroughs"
+    url = "/playthroughs/"
+    weight = 4
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+archive = "archives"
+
+[privacy]
+
+  [privacy.vimeo]
+    disabled = false
+    simple = true
+
+  [privacy.twitter]
+    disabled = false
+    enableDNT = true
+    simple = true
+
+  [privacy.instagram]
+    disabled = false
+    simple = true
+
+  [privacy.youtube]
+    disabled = false
+    privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+    disableInlineCSS = true
+
+  [services.twitter]
+    disableInlineCSS = true
