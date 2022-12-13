@@ -2,7 +2,7 @@
 title: 'Coronado Dunes'
 date: 2022-10-22T00:24:00-07:00
 draft: false
-featuredImage: /img/coronado-dunes-hotel-del-and-vince.jpeg
+image: /img/coronado-dunes-hotel-del-and-vince.jpeg
 latitude: 32.76818029410795
 longitude: -117.25187282137523
 map-link: https://www.openstreetmap.org/#map=17/32.76783/-117.24733&layers=N

@@ -2,7 +2,7 @@
 title: 'Mathewson Park'
 date: 2022-10-25T17:39:21-07:00
 draft: False
-featuredImage: /img/mathewson-park.jpg
+image: /img/mathewson-park.jpg
 tags:
   - Coronado
   - tiny

@@ -93,18 +93,6 @@ darkmode = "light"
     url = "/about/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "gardens"
-    name = "Gardens"
-    url = "/gardens/"
-    weight = 3
-
-  [[menu.main]]
-    identifier = "playthroughs"
-    name = "Playthroughs"
-    url = "/playthroughs/"
-    weight = 4
-
 [taxonomies]
 category = "categories"
 tag = "tags"
