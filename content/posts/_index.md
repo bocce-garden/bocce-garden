@@ -1,8 +1,8 @@
 ---
-title: "Posts"
+title: "Blog"
 menu:
   main:
-    name: "Posts"
+    name: "Blog"
     weight: 3
     url: "posts"
 ---

@@ -3,11 +3,6 @@ layout: page
 title: How to Play
 permalink: /how-to-play/
 date:   2022-10-24 19:02:00 -0700
-menu:
-  main:
-    name: "How to Play"
-    weight: 2
-    url: "/how-to-play/"
 ---
 
 Equipment
