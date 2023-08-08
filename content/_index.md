@@ -3,6 +3,6 @@ title: bocce.garden
 draft: false
 ---
 
-# Hot Jam
+# bocce.garden
 
-pero why
+Bocce Gardens of SoCal!
