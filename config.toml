@@ -1,5 +1,5 @@
-baseURL = "https://example.com"
-title = "Bocce.Garden"
+baseURL = "https://bocce.garden"
+title = "Juniper Grato"
 author = "wamo"
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -25,7 +25,7 @@ base_color = "bg-gray-800"
 description = "Bocce Gardens of Southern California"
 
 # The number of articles to be displayed on a single page.
-paginator_pages = "5"
+paginator_pages = "25"
 
 # Enable this if you want the archive list to be in a drop-down format.
 archive_dropdown = "false"
