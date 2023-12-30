@@ -1,6 +1,6 @@
-baseURL = "https://bocce.garden"
-title = "Juniper Grato"
-author = "wamo"
+baseURL = "https://example.com"
+title = "Bocce Garden"
+author = "Juniper Grato"
 languageCode = "en"
 DefaultContentLanguage = "en"
 enableInlineShortcodes = true
