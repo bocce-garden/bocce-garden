@@ -9,7 +9,7 @@ tags:
   - Balboa Park
   - grass
   - roots
-  - 
+  - palm grove
 ---
 ![Dr. Batya over downtown](/img/golden-hill-park-Batya.jpg)
 ![June and their peaceful countenance](/img/golden-hill-park-june.jpg)
