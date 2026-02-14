@@ -83,6 +83,12 @@ darkmode = "light"
     url = "/"
     weight = 1
 
+	[[menu.main]]
+		identifier = "map"
+		name = "Map"
+		url = "/map/"
+		weight = 2
+
   [[menu.main]]
     identifier = "about"
     name = "About"
@@ -100,13 +106,8 @@ archive = "archives"
     disabled = false
     simple = true
 
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
-
   [privacy.instagram]
-    disabled = false
+    disabled = true
     simple = true
 
   [privacy.youtube]
@@ -116,7 +117,4 @@ archive = "archives"
 [services]
 
   [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
     disableInlineCSS = true
