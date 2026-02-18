@@ -3,6 +3,9 @@ title: "Golden Hill Park"
 date: 2024-03-05T12:47:26-08:00
 image: /img/golden-hill-park-downtown-landscape.jpg
 draft: false
+params:
+  lon: -117.140
+  lat: 32.720
 tags:
   - downtown
   - Golden Hill
@@ -11,8 +14,6 @@ tags:
   - roots
   - palm grove
 ---
-![Dr. Batya over downtown](/img/golden-hill-park-Batya.jpg)
-![June and their peaceful countenance](/img/golden-hill-park-june.jpg)
 
 Golden Hill Park is a little section of Balboa park cut off from the rest by main roads and the nearby golf course.
 To be frank, I mostly come here late at night to see the planes after some dinner and drins at the Turf Supper Club down the street.
@@ -35,5 +36,5 @@ If you're interested in some community, subscribe to [the mailing list](/posts/m
 I am also beginning to post on instagram at [bocce.garden@instagram](https://www.instagram.com/bocce.garden/)
 Right now I'm coordinating with specific individuals to go play, but soon I'll be hosting meetups!
 
-Get directions to [Golden Hill Park at OpenStreetMap](https://www.openstreetmap.org/search?query=golden%20hill%20park%20san%20diego#map=19/32.72063/-117.14026)
-
+![Dr. Batya over downtown](/img/golden-hill-park-Batya.jpg)
+![June and their peaceful countenance](/img/golden-hill-park-june.jpg)

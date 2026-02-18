@@ -3,6 +3,9 @@ title: "Old Trolley Barn Park"
 date: 2024-01-18T11:15:14-08:00
 draft: false
 image: /img/trolley-barn-park-benjamin-cheesing.png
+params:
+  lon: -117.1439
+  lat: 32.7628
 tags:
   - grass
   - park

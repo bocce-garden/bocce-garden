@@ -3,6 +3,9 @@ title: 'Mathewson Park'
 date: 2022-10-25T17:39:21-07:00
 draft: False
 image: /img/mathewson-park.jpg
+params:
+  lon: -117.1727
+  lat: 32.6872
 tags:
   - Coronado
   - tiny

@@ -3,6 +3,9 @@ title: "SDSU Mission Valley River Park"
 date: 2024-01-11T10:04:00-08:00
 draft: false
 image: /img/sdsu-river-park-longshot.png
+params:
+  lon: -117.1223
+  lat: 32.7807
 tags: 
   - grass
   - long game

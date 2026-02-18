@@ -3,6 +3,9 @@ title: "Tijuana Slough"
 date: 2024-05-23T15:35:47-07:00
 draft: false
 image: /img/IB-horz.png
+params:
+  lon: -117.132
+  lat: 32.565
 tags:
   - Tijuana Estuary
   - Imperial Beach

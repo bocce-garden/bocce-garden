@@ -3,6 +3,9 @@ title: "Ponto Beach"
 date: 2023-12-30T11:45:34-08:00
 draft: false
 image: /img/ponto-beach-jennie-marie.png
+params:
+  lon: -117.3121
+  lat: 33.0850
 tags:
   - beach
   - dunes

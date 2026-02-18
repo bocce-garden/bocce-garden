@@ -3,6 +3,9 @@ title: "Liberty Station Knolls"
 date: 2024-01-20T11:29:15-08:00
 image: /img/liberty-station-trad-grass.png
 draft: false
+params:
+  lon: -117.2142
+  lat: 32.7328
 tags:
   - grass
   - flats

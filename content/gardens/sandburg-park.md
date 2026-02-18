@@ -3,6 +3,9 @@ title: "Sandburg Park"
 date: 2024-02-13T17:36:37-08:00
 draft: false
 image: /img/Sandburg-Park-grass.jpg
+params:
+  lon: -117.148
+  lat: 32.924
 tags:
   - grass
   - wood chips

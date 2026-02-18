@@ -3,6 +3,9 @@ title: "Pioneer Park"
 date: 2024-01-16T11:05:03-08:00
 draft: false
 image: /img/Pioneer-Park-Leslie.png
+params:
+  lon: -117.1774
+  lat: 32.7492
 tags:
   - mission hills
   - grass

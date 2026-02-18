@@ -2,9 +2,9 @@
 title: 'OB Lifeguard Tower'
 date: 2022-10-25T18:28:58-07:00
 draft: false
-latitude: 32.749837893299585
-longitude: -117.25223146355317
-map-link: https://www.openstreetmap.org/search?query=32.749837893299585%2C%20-117.25223146355317#map=18/32.74980/-117.25225
+params:
+  lat: 32.749837893299585
+  lon: -117.25223146355317
 tags:
   - Ocean Beach
   - grass

@@ -2,6 +2,10 @@
 title: "Beachcomber's"
 date: 2022-10-24T19:50:33-07:00
 draft: false
+type: garden
+params:
+  lon: -117.2496
+  lat: 32.7657
 tags:
   - Mission Beach
   - beach

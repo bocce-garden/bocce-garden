@@ -3,6 +3,9 @@ title: "South Belmont"
 date: 2024-01-20T10:59:20-08:00
 draft: false
 image: /img/south-belmont-ben-faust.png
+params:
+  lon: -117.2522
+  lat: 32.7681
 tags:
   - Mission Beach
   - grass
