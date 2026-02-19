@@ -1,4 +1,10 @@
 {{ define "main" }}
+  <div id="garden" style="display: none;">
+    <div class="name">{{ .Params.Title }}</div>
+    <div class="latitude">{{ .Params.lat }}</div>
+    <div class="longitude">{{ .Params.lon }}</div>
+  </div>
+
   <h1 class="title text-4xl font-bold mb-2">{{ .Title }}</h1>
 
   {{ $externals := slice "openlayers" }}
@@ -8,12 +14,6 @@
   <div id="map" style="width: 100%; height: 425px; display: none;"></div>
   {{ $built := resources.Get "main.js" | js.Build $opts }}
   <script type="module" src="/main.js"></script>
-
-  <div id="garden" style="display: none;">
-    <div class="name">{{ .Params.Title }}</div>
-    <div class="latitude">{{ .Params.lat }}</div>
-    <div class="longitude">{{ .Params.lon }}</div>
-  </div>
 
   <div class="content prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert py-1">
     {{ .Content }}

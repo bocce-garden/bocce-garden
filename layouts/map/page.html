@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <link rel="stylesheet" href="/node_modules/ol/ol.css">
+
+  <div id="garden_collection" style="display: none;">
+    {{ range where .Site.RegularPages "Section" "gardens" }}
+    <div class="garden">
+      <div class="name">{{ .Params.Title }}</div>
+      <div class="latitude">{{ .Params.lat }}</div>
+      <div class="longitude">{{ .Params.lon }}</div>
+    </div>
+    {{ end }}
+  </div>
+
+  <h1 class="title text-4xl font-bold mb-2">All Gardens</h1>
+
+  {{ $externals := slice "openlayers" }}
+  {{ $defines := dict "process.env.NODE_ENV" `"production"` }}
+  {{ $opts := dict "targetPath" "main.js" "externals" $externals "defines" $defines }}
+  <div id="map" style="display: none;"></div>
+  {{ $built := resources.Get "main.js" | js.Build $opts }}
+  <script type="module" src="/main.js"></script>
+{{ end }}

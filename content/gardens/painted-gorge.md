@@ -1,8 +1,11 @@
 ---
-title: "Painted Gorge (Outside of Ocotillo), Imperial County"
+title: "Painted Gorge"
 date: 2024-03-12T11:45:00-07:00
 draft: false
 image: /img/painted-gorge-tent.jpg
+params:
+  lon: -115.9717
+  lat: 32.8136
 tags:
   - desert
   - anza borrego

@@ -12,18 +12,57 @@ import OSM from './node_modules/ol/source/OSM.js';
 import VectorSource from './node_modules/ol/source/Vector.js';
 
 
-const sd_center = [-117.419, 32.929];
-
 const garden = document.getElementById('garden');
-const latitude = garden.querySelectorAll('div.latitude').item(0).innerHTML;
-const longitude = garden.querySelectorAll('div.longitude').item(0).innerHTML;
+const gardens = document.getElementById('garden_collection');
 
-if (latitude && longitude) {
+if (garden) {
+  const latitude = garden.querySelectorAll('div.latitude').item(0).innerHTML;
+  const longitude = garden.querySelectorAll('div.longitude').item(0).innerHTML;
+
+  if (latitude && longitude) {
+    const map = new Map({
+      target: 'map',
+      view: new View({
+        center: fromLonLat([longitude, latitude]),
+        zoom: 12,
+      }),
+      layers: [
+        new TileLayer({
+          source: new OSM(),
+        }),
+        new VectorLayer({
+          source: new VectorSource({
+            features: [
+              new Feature(new Point(fromLonLat([longitude, latitude]))),
+            ],
+          }),
+          style: {
+            'circle-radius': 7,
+            'circle-fill-color': 'red',
+          },
+        }),
+      ],
+    });
+    document.getElementById('map').style = "width: 100%; height: 425px;"
+  }
+}
+
+if (gardens) {
+  const sd_center = [-116.9769, 32.7864]
+  var points = []
+  for (const point of gardens.children) {
+    const latitude = point.querySelectorAll('div.latitude').item(0).innerHTML;
+    const longitude = point.querySelectorAll('div.longitude').item(0).innerHTML;
+    if (latitude && longitude) {
+      points.push(new Feature(new Point(fromLonLat([longitude, latitude]))))
+    }
+  }
+
   const map = new Map({
     target: 'map',
     view: new View({
-      center: fromLonLat([longitude, latitude]),
-      zoom: 12,
+      center: fromLonLat(sd_center),
+      zoom: 10,
     }),
     layers: [
       new TileLayer({
@@ -31,9 +70,7 @@ if (latitude && longitude) {
       }),
       new VectorLayer({
         source: new VectorSource({
-          features: [
-            new Feature(new Point(fromLonLat([longitude, latitude]))),
-          ],
+          features: points,
         }),
         style: {
           'circle-radius': 7,
@@ -42,5 +79,5 @@ if (latitude && longitude) {
       }),
     ],
   });
-  document.getElementById('map').style = "width: 100%; height: 425px;"
+  document.getElementById('map').style = "width: 100%; height: 600px;"
 }
